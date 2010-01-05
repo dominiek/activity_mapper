@@ -1,0 +1,274 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+  <head>
+        <script type="text/javascript">
+//<![CDATA[
+var page={};var onCondition=function(D,C,A,B){D=D;A=A?Math.min(A,5):5;B=B||100;if(D()){C()}else{if(A>1){setTimeout(function(){onCondition(D,C,A-1,B)},B)}}};
+//]]>
+</script>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta content="en-us" http-equiv="Content-Language" />
+<meta content="Twitter is a free social messaging utility for staying connected in real-time" name="description" />
+<meta content="no" http-equiv="imagetoolbar" />
+<meta content="width = 780" name="viewport" />
+<meta content="4FTTxY4uvo0RZTMQqIyhh18HsepyJOctQ+XTOu1zsfE=" name="verify-v1" />
+<meta content="" name="page" />
+<meta content="IE=7" http-equiv="X-UA-Compatible" />
+<meta content="n" name="session-loggedin" />
+    <title>Twitter</title>
+    <link href="http://assets1.twitter.com/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<link href="http://assets1.twitter.com/images/twitter_57.png" rel="apple-touch-icon" />
+    
+    <link href="http://assets3.twitter.com/stylesheets/screen.css?1241471612" media="screen, projection" rel="stylesheet" type="text/css" />
+<link href="http://assets3.twitter.com/stylesheets/master.css?1241471613" media="screen, projection" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+      body { background: #9ae4e8 url(http://assets2.twitter.com/images/bg.gif) fixed no-repeat top left; }
+    #front #content { background: transparent url('http://static.twitter.com/images/arr2.gif') no-repeat scroll 25px 0px; }
+    #whatistwitter ul li blockquote { background: url('http://static.twitter.com/images/arr.gif') no-repeat 8% 100%; }
+  
+  .content-bubble-arrow { background-image: url(http://static.twitter.com/images/arr2.gif); }
+  .status-btn input.round-btn { background-image: url('http://static.twitter.com/images/round-btn.gif'); }
+  .status-btn input.round-btn:hover { background-image: url('http://static.twitter.com/images/round-btn-hover.gif'); }
+  .status-btn input.disabled, .status-btn input.disabled:hover { background-image: url('http://static.twitter.com/images/round-btn.gif'); }
+  .hentry .actions .fav { background-image: url('http://static.twitter.com/images/icon_star_full.gif'); }
+  .hentry .actions .non-fav { background-image: url('http://static.twitter.com/images/icon_star_empty.gif'); }
+  .hentry .actions .fav-throb, .hentry .actions a.del-throb { background-image: url('http://static.twitter.com/images/icon_throbber.gif'); }
+  .hentry .actions .del { background-image: url('http://static.twitter.com/images/icon_trash.gif'); }
+  body#show .reply, .hentry .actions .reply { background-image: url('http://static.twitter.com/images/icon_reply.gif'); }
+  .direct_message .actions .reply { background-image: url('http://static.twitter.com/images/icon_direct_reply.gif'); }
+  .direct_message .actions .del { background-image: url('http://static.twitter.com/images/icon_trash.gif'); }
+  .notify { background-image: url('http://static.twitter.com/images/girl.gif'); }
+  ul#tabMenu a#keyword_search_tab.hover, ul#tabMenu a:hover { background-image: url('http://static.twitter.com/images/pale.png'); background-color: transparent; }
+  div#follow-toggle.closed { background-image: url('http://static.twitter.com/images/toggle_closed.gif'); }
+  div#follow-toggle.opened { background-image: url('http://static.twitter.com/images/toggle_opened.gif'); }
+  .follow-actions .following { background-image: url('http://static.twitter.com/images/checkmark.gif'); }
+  .more { background-image: url('http://static.twitter.com/images/more.gif'); }
+  .more.loading { background-image: url('http://static.twitter.com/images/ajax.gif'); }
+  body#show .protected { background-image: url('http://static.twitter.com/images/icon_lock.gif'); }
+  .rss { background-image: url('http://static.twitter.com/images/rss.gif'); }
+  .bulletin a.close { background: transparent url('http://static.twitter.com/images/close_small.png') no-repeat; }
+  #sidebar_search_submit { background: url('http://static.twitter.com/images/nav_search_submit.png') -2px 0px !important ; }
+  #sidebar_search_submit:hover { background: url('http://static.twitter.com/images/nav_search_submit.png') -2px -25px !important; }
+  #sidebar_search_submit:active { background: url('http://static.twitter.com/images/nav_search_submit.png') -2px -50px !important; }
+  #sidebar_search_submit.loading, #sidebar_search_submit.loading:hover, #sidebar_search_submit.loading:active  { background: #eee url('http://static.twitter.com/images/spinner.gif') no-repeat 5px 5px !important; }
+
+  ul.sidebar-menu li.loading a {
+    background: #edffe5 url('http://static.twitter.com/images/spinner.gif') no-repeat 171px 0.5em;
+  }
+
+  #side .collapsible.loading h2.sidebar-title { background: transparent url('http://static.twitter.com/images/spinner.gif') no-repeat center right !important; }
+  #side .collapsible h2.sidebar-title {
+    background: transparent url('http://static.twitter.com/images/toggle_up_dark.png') no-repeat right center;
+    width: 157px;
+  }
+
+  #side .collapsible.collapsed h2.sidebar-title {
+    background: transparent url('http://static.twitter.com/images/toggle_down_dark.png') no-repeat right center;
+  }
+
+  .save-search-link {
+    background: transparent url('http://static.twitter.com/images/icon_add.png') no-repeat left bottom;
+  }
+
+  .delete-search-link {
+    background: transparent url('http://static.twitter.com/images/icon_remove.png') no-repeat left bottom;
+  }
+
+  #timeline_heading h1 span.loading {
+    background: transparent url('http://static.twitter.com/images/spinner.gif') no-repeat left bottom;
+  }
+
+  
+</style>
+    
+  </head>
+
+  <body class="sessions firefox" id="new">
+    <div id="dim-screen"></div>
+    <ul id="accessibility" class="offscreen">
+  <li><a href="#content" accesskey="0">Skip past navigation</a></li>
+  <li>On a mobile phone? Check out <a href="http://m.twitter.com/">m.twitter.com</a>!</li>
+  <li><a href="#footer" accesskey="2">Skip to navigation</a></li>
+    <li><a href="#signin">Skip to sign in form</a></li>
+</ul>
+
+    
+
+    <div id="container" class="subpage">
+            <span id="loader" style="display:none"><img alt="Loader" src="http://assets0.twitter.com/images/loader.gif" /></span>
+      <div id="header">
+  <a href="/" title="Twitter: home" accesskey="1" id="logo">
+          <img alt="Twitter.com" height="36" src="http://assets0.twitter.com/images/twitter_logo_header.png" width="155" />    
+  </a>
+            <form method="post" id="sign_out_form" action="/sessions/destroy" style="display:none;">
+        <input name="authenticity_token" value="e8fb47a2a45cd1cb673bca47f8d387c1f171e562" type="hidden" />
+      </form>
+      <ul class="top-navigation round">
+                  <li><a href="/login" accesskey="l">Login</a></li>
+          <li class="signup-link"><a href="/signup">Join Twitter!</a></li>
+              </ul>
+      </div>
+
+
+
+
+      
+      <div class="content-bubble-arrow"></div>
+      
+        <table cellspacing="0" class="columns">
+          <tbody>
+            <tr>
+              <td id="content" class="round-left column">
+                                <div class="wrapper">
+                  
+                  <h2>Sign in to Twitter</h2>
+
+<p>
+  If you&rsquo;ve been using Twitter from your phone, <a href="/account/complete">click here</a> and we&rsquo;ll get you signed up on the web.</p>
+
+
+  <form method="post" class="signin" action="https://twitter.com/sessions">
+
+  <input id="authenticity_token" name="authenticity_token" type="hidden" value="e8fb47a2a45cd1cb673bca47f8d387c1f171e562" />  <fieldset class="common-form standard-form">
+    <table cellspacing="0">
+      <tr>
+        <th><label for="username_or_email">Username</label></th>
+        <td><input id="username_or_email" name="session[username_or_email]" type="text" value="" /></td>
+      </tr>
+      <tr>
+        <th><label for="password">Password</label></th>
+        <td><input id="session[password]" name="session[password]" type="password" /> <small><a href="/account/resend_password">Forgot?</a></small></td>
+      </tr>
+      <tr>
+        <th></th>
+        <td><input id="remember_me" name="remember_me" type="checkbox" value="1" /> <label for="remember_me" class="inline">Remember me</label></td>
+      </tr>
+      
+      <tr>
+        <th></th>
+        <td><input id="signin_submit" name="commit" type="submit" value="Sign In" /></td>
+      </tr>
+    </table>
+  </fieldset>
+</form>
+
+
+
+                </div>
+                              </td>
+              
+                <td id="side_base" class="column round-right">
+                                  
+                  <div id="side">
+                      <div class="section">
+  <div class="section-header">
+    <h1>Create Your Account</h1>
+  </div>
+  <div class="join">
+    <form name="account_signup_form" id="account_signup_form" action="/signup">
+      <input id="join" name="commit" type="submit" value="Join!" />
+    </form>
+    <p class="complete">
+      Already using Twitter<br /> from your phone?
+      <a href="/account/complete">Click here</a>.
+    </p>
+  </div>
+</div>
+<div class="section">
+  <div id="lang-select"><form action="/sessions/change_locale" id="lf" method="post" style="margin-top:2px"><div style="margin:0;padding:0"><input name="authenticity_token" type="hidden" value="e8fb47a2a45cd1cb673bca47f8d387c1f171e562" /></div>
+  <select name="lang" onchange="document.getElementById('lf').submit();">
+    <option value="" selected="selected">Select Language ...&nbsp;</option>
+<option value="en">English</option>
+<option value="ja">Japanese - 日本語</option>
+
+  </select>
+</form>
+</div>
+</div>
+
+
+                  </div>
+                                </td>
+              
+            </tr>
+          </tbody>
+        </table>
+      
+
+      
+  <div id="footer"  class="round">
+    <h3 class="offscreen">Footer</h3>
+  
+    <ul>
+      <li class="first">&copy; 2009 Twitter</li>
+      <li><a href="/about#about">About Us</a></li>
+      <li><a href="/about#contact">Contact</a></li>
+      <li><a href="http://blog.twitter.com">Blog</a></li>
+      <li><a href="http://status.twitter.com">Status</a></li>
+              <li><a href="/downloads">Apps</a></li>
+            <li><a href="http://apiwiki.twitter.com/">API</a></li>
+      <li><a href="http://search.twitter.com">Search</a></li>
+      <li><a href="http://help.twitter.com">Help</a></li>
+      <li><a href="/jobs">Jobs</a></li>
+      <li><a href="/tos">Terms</a></li>
+      <li><a href="/privacy">Privacy</a></li>
+    </ul>
+  </div>
+
+
+
+      <hr />
+
+    </div>
+
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.0/jquery.min.js" type="text/javascript"></script><script src="http://assets2.twitter.com/javascripts/application.js?1241471564" type="text/javascript"></script><script src="http://assets0.twitter.com/javascripts/jquery.watermarkinput.js?1241471586" type="text/javascript"></script><script src="http://assets1.twitter.com/javascripts/notifications.js?1241471586" type="text/javascript"></script><script src="http://assets3.twitter.com/javascripts/search.js?1241471588" type="text/javascript"></script>
+<script src="http://assets3.twitter.com/javascripts/jquery.cookie.js?1241471575" type="text/javascript"></script><script type="text/javascript">
+//<![CDATA[
+      twttr.form_authenticity_token = 'e8fb47a2a45cd1cb673bca47f8d387c1f171e562';
+    if (window.top !== window.self) { setTimeout(function(){document.body.innerHTML='';},1);window.self.onload=function(evt){document.body.innerHTML='';};}
+//]]>
+</script><script type="text/javascript">
+//<![CDATA[
+
+      $( function () {
+            $('#username_or_email').focus();
+
+      });
+    
+//]]>
+</script>
+
+    
+  
+  <!-- BEGIN google analytics -->
+
+  <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+
+  <script type="text/javascript">
+    try {
+      var pageTracker = _gat._getTracker("UA-30775-6");
+      pageTracker._setDomainName("twitter.com");
+              pageTracker._setVar('Not Logged In');
+              pageTracker._setVar('lang: en_US');
+            pageTracker._initData();
+                                    pageTracker._trackPageview();
+                      } catch(err) { }
+  </script>
+
+  <!-- END google analytics -->
+
+
+
+
+
+    <div id="notifications"></div>
+
+  </body>
+
+</html>
