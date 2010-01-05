@@ -155,7 +155,6 @@ h2. Step 2: Map that activity!
 h2. Example Service Module
 
 <pre><code>
-
   module ActivityMapper
 
     class TwitterServiceModule < ServiceModule
