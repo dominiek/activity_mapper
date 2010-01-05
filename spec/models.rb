@@ -1,4 +1,7 @@
 
+# For this example, we're using OpenStruct as a storage system.
+# Normally one would use DataMapper or ActiveRecord
+
 require 'ostruct'
 
 class PersistentObject < OpenStruct
@@ -17,7 +20,40 @@ class PersistentObject < OpenStruct
   
 end
 
+# -- All objects below need to be defined in order for activity_mapper to function
+
+# Your base user object
+class User < PersistentObject; end
+
+# Profile information: username, native_id, url
+class ServiceProfile < PersistentObject
+  
+  # belongs_to :user, implement me!
+  # has_many :activities, implement me!
+  def initialize(*arg); super(*arg); @activities = []; end
+  attr_accessor :activities
+  
+  # -- All below is code necessary for routing to the proper service module (based on URL)
+  
+  def create_or_update_summary!(*arg); service_module ? service_module.create_or_update_summary!(*arg) : nil; end
+  def aggregate_activity!(*arg); service_module ? service_module.aggregate_activity!(*arg) : nil; end
+  def analyze_this(*arg); service_module ? service_module.analyze_this(*arg) : nil; end
+  
+  def service_module
+    return @service_module if @service_module
+    if (service_module_klass = ActivityMapper::ServiceModule.klass_for(url))
+      @service_module = service_module_klass.new(self)
+    else
+      nil
+    end
+  end
+  
+end
+
+# The actual event that happened: caption, occurred_at, url, reference to ActivityObject
 class Activity < PersistentObject
+
+  # has_one :object, implement me!
 
   # Implement anti-duplication mechanisms here
   def self.exists?(user_id, entry)
@@ -26,15 +62,7 @@ class Activity < PersistentObject
 
 end
 
-class ActivityVerb < PersistentObject
-  
-  POST          = ActivityVerb.new(:id => 1)
-  FAVORITE      = ActivityVerb.new(:id => 2)
-  RECENTLY_USED = ActivityVerb.new(:id => 3)
-  NEWLY_USED    = ActivityVerb.new(:id => 4)
-  
-end
-
+# The object that's referenced by the event: title, body, url, created_at
 class ActivityObject < PersistentObject
   
   def self.fetch(content_identifier, activity_object_type_id)
@@ -52,6 +80,24 @@ class ActivityObject < PersistentObject
   
 end
 
+# Optional object that holds ranking/stats information
+class RatingSummary < PersistentObject; end
+
+# Hold media information
+class Media < PersistentObject; end
+
+# See activitystrea.ms for more verbs
+class ActivityVerb < PersistentObject
+  
+  # Constant Cache
+  POST          = ActivityVerb.new(:id => 1)
+  FAVORITE      = ActivityVerb.new(:id => 2)
+  RECENTLY_USED = ActivityVerb.new(:id => 3)
+  NEWLY_USED    = ActivityVerb.new(:id => 4)
+  
+end
+
+# See activitystrea.ms for more types
 class ActivityObjectType < PersistentObject
 
   # Constant Cache
@@ -66,32 +112,3 @@ class ActivityObjectType < PersistentObject
 
 end
 
-class Media < PersistentObject; end
-class RatingSummary < PersistentObject; end
-class Profile < PersistentObject; end
-class User < PersistentObject; end
-class ServiceProfile < PersistentObject
-  
-  def initialize(*arg)
-    super(*arg)
-    @activities = []
-  end
-  
-  # has_many
-  attr_accessor :activities
-  
-  # ServiceModule method routing
-  def create_or_update_summary!(*arg); service_module ? service_module.create_or_update_summary!(*arg) : nil; end
-  def aggregate_activity!(*arg); service_module ? service_module.aggregate_activity!(*arg) : nil; end
-  def analyze_this(*arg); service_module ? service_module.analyze_this(*arg) : nil; end
-  
-  def service_module
-    return @service_module if @service_module
-    if (service_module_klass = ActivityMapper::ServiceModule.klass_for(url))
-      @service_module = service_module_klass.new(self)
-    else
-      nil
-    end
-  end
-  
-end
